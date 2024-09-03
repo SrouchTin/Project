@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Navigation section -->
+        <div class="navigation">
+            <div class="menu-container">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Category</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="#">Places</a>
+                            </li>
+                            <li>
+                                <a href="#">Food</a>
+                            </li>
+                            <li>
+                                <a href="#">Desserts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mode-container" id="darkmode">
+                <i class="fa-solid fa-moon"></i>
+                <p onclick="darkMode()">Dark mode</p>
+            </div>
+            <div class="mode-container" id="light-mode">
+                <i class="fa-solid fa-moon"></i>
+                <p onclick="lightmode()">Light mode</p>
+            </div>
+        </div>
+     <!-- Navigation section -->
+      <!-- Logo -->
+      <div class="logo-search-container">
+        <h2>LOGO.</h2>
+        <div class="input-container">
+            <input type="text" placeholder="Search here">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="account-manager">
+            <p>Login</p>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+       <!-- Logo -->
+        <!-- Hero-container -->
+         <div class="hero-container" data-aos="fade-down" data-aos-duration="2000">
+            <div class="hero-text-container" data-aos="fade-right" data-aos-duration="2000">
+                <h1>Explore the best Place in Cambodia</h1>
+                <p>Enchant your journey , planning and explore the best <br>place in Cambodia....</p>
+                <button class="btn-container">Explore now...</i></button>
+            </div>
+            <div class="image-card-container" data-aos="fade-left" data-aos-duration="2000">
+                <img src="/images/imgae-container-1.png" alt="">
+                <img src="/images/imgae-container-1 (1).png" alt="">
+                <img src="/images/imgae-container-1 (2).png" alt="">
+            </div>
+         </div>
+         <!-- Hero-container -->
+         <div class="special-features" data-aos="fade-down" data-aos-duration="2000">
+            <h1>Special features for the best and exiting exploration</h1>
+         </div>
+         <!-- Best Place -->
+          <div class="place-food" data-aos="fade-down" data-aos-duration="2000">
+            <img src="/images/best-place.png" alt="">
+            <img src="/images/best-food.png" alt="">
+          </div>
+          <div class="text-place">
+            <h2>Best place to visit</h2>
+            <i class="fa-solid fa-arrow-right" id="icon-place-food"></i>
+            <p>We provide the information about the best place for visit in <br> Cambodia</p>
+          </div>
+          <div class="text-food">
+            <h2>Delicious  Cambodian foods</h2>
+            <i class="fa-solid fa-arrow-right" id="icon-place-food"></i>
+            <p>Cambodia have many delicious foods that you should tast.</p>
+          </div>
+         <!-- Best Place -->
+        <div class="trending">
+            <p>Trending place and food in Cambodia</p>
+        </div>
+        <!-- All Place Foode Deserts -->
+         <div class="show-all" data-aos="fade-left" data-aos-duration="2000">
+            <button class="btn-all">All</button>
+            <button class="btn-place">Places</button>
+            <button class="btn-food">Foods</button>
+            <button class="btn-desert">Deserts</button>
+         </div>
+        <!-- All Place Foode Deserts -->
+         <!-- First Trending -->
+          <div class="first-trending" data-aos="fade-left" data-aos-duration="2000">
+            <img src="/images/place-trending-1.png" alt="">
+            <img src="/images/place-trending-2.png" alt="">
+            <img src="/images/place-tending-3.png" alt="">
+          </div>
+          <button class="btn-1" id="btn"><i class="fa-solid fa-arrow-right"></i></button>
+          <button class="btn-2" id="btn"><i class="fa-solid fa-arrow-left"></i></button>
+          <!-- First Trending -->
+         <!-- Place In Cambodia -->
+          <div class="place-in-cam">
+            <h2>Place in Cambodia</h2>
+          </div>
+          <div class="image-place-in-cam" data-aos="fade-right" data-aos-duration="2000">
+            <img src="/images/image-place-in-cam-1.png" alt="">
+            <img src="/images/image-place-in-cam-2.png" alt="">
+            <img src="/images/image-place-in-cam-3.png" alt="">
+          </div>
+          <button class="btn-place-1" id="btn"><i class="fa-solid fa-arrow-right"></i></button>
+          <button class="btn-place-2" id="btn"><i class="fa-solid fa-arrow-left"></i></button>
+        <!-- Place In Cambodia -->
+         <button class="btn-see-all">See all <i class="fa-solid fa-arrow-right"></i></button>
+         <!-- Foods in cambodia -->
+          <div class="food-in-cam">
+            <h2>Foods in Cambodia</h2>
+          </div>
+          <div class="image-food-in-cam" data-aos="fade-left" data-aos-duration="2000">
+            <img src="images/image-food-in-cam-1.jpg" alt="">
+            <img src="images/image-food-in-cam-12.jpg" alt="">
+            <img src="images/image-food-in-cam-3.jpg" alt="">
+          </div>
+          <button class="btn-place-1" id="btn"><i class="fa-solid fa-arrow-right"></i></button>
+          <button class="btn-place-2" id="btn"><i class="fa-solid fa-arrow-left"></i></button>
+          <!-- Foods in cambodia -->
+          <button class="btn-see-all">See all <i class="fa-solid fa-arrow-right"></i></button>
+           <!-- Footer -->
+            <div class="footer" data-aos="fade-down" data-aos-duration="2000">
+                <div class="main">
+                    <h1>VISITIo.</h1>
+                    <button>LOGO.</button>
+                </div>
+                <div class="content">
+                    <h1>Home</h1>
+                    <h1>Place</h1>
+                    <h1>Foods</h1>
+                </div>
+                <div class="side">
+                    <h1>Socials</h1>
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+        <!-- Javascript -->
+       <script>
+           function darkMode() {
+               let element = document.body;
+               element.className = "dark-mode";
+           }
+           function lightmode() {
+               let element = document.body;
+               element.className = "light-mode";
+           }
+       </script>
+       <!-- Javascript -->
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init();
+</script>
+</html>
